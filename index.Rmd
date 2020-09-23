@@ -83,7 +83,6 @@ editor_options:
   - support multiple registry endpoints?
   - connect installations and resources to networks in the GBIF registry from the IPT
 
-
 ---
 
 ## Usability issues
@@ -97,7 +96,8 @@ editor_options:
 
 ## Software architecture
 
-- see GeoNode's modular design using Django apps
+- see GeoNode's modular design using core and contributed Django apps
+- plugins for input and output of domain specific file formats such as netCDF, BIOM
 
 ---
 
