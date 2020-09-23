@@ -39,7 +39,7 @@ editor_options:
 
 - detailed and machine readable sampling methodology, quantitative data, and environmental parameters are a primary focus for OBIS <br/>&rarr; facilitate analyses across datasets, including calculation of Essential Ocean Variables (EOV) data products
 - ExtendedMeasurementsOrFacts extension: pragmatic solution to the star schema limitation, but not very intuitive
-- Frictionless Data packages
+- Frictionless Tabular Data Packages
 
 <img src="images/envdata.png" style="width: 40%;"/>
 
