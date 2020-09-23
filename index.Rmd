@@ -102,3 +102,5 @@ editor_options:
 ---
 
 `r emo::ji("whale")`
+
+https://iobis.github.io/presentation-tdwg-ipt
