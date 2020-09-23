@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.reveal {
+  font-family: 'Lato', 'sans-serif';
+  color: #4a5568;
+}
+
+.reveal a, .reveal a:hover {
+  color: #d8345f;
+}
+
+.reveal .progress {
+  height: 5px;
+}
+
+.reveal .progress span {
+  background-color: #d8345f;
+}
+
+.reveal h1.title { 
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #4a5568;
+  font-size: 0.8em;
+}
+
+.reveal h2.author { 
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #4a5568;
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.reveal h1.subtitle { 
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #d8345f;
+  font-size: 1.4em;
+}
+
+.reveal h2, .reveal h3, .reveal h4 { 
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #d8345f;
+}
+
+.reveal .slide-number {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 5px;
+  right: 0px;
+}
+
+.reveal section p, .reveal section ul {
+  font-size: 30px;
+}
+
+.reveal section ul {
+  line-height: 1.6em;
+}
+
+.reveal pre {
+  box-shadow: none;
+  padding: 1em;
+  background-color: #fafafa;
+  border-radius: 0.5em;
+}
+
+.reveal code {
+  color: #d8345f;
+}
+
+.reveal section img {
+  border: 0px;
+  box-shadow: none;
+}
+
+.reveal .caption {
+  font-size: 0.6em;
+}
+
+.reveal .imagerow {
+  display: grid;
+  grid-template-columns: 39% 39% 22%;
+}
+
+.reveal section > ul > li {
+  margin-bottom: 0.5em;
+}

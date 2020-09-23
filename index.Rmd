@@ -1,0 +1,104 @@
+---
+title: Capturing Ideas for the Future of BioCASe Provider Software and the GBIF Integrated Publishing Toolkit (IPT)
+subtitle: OBIS perspectives
+author: | 
+  | Pieter Provoost
+  | Intergovernmental Oceanographic Commission (IOC) of UNESCO 
+  | p.provoost@unesco.org
+output:
+  revealjs::revealjs_presentation:
+    fig_width: 6
+    fig_height: 4
+    center: true
+    self_contained: false
+    reveal_plugins: ["notes"]
+    css:
+    - css/style.css
+    theme: simple
+    highlight: tango
+    transition: none
+    background_transition: none
+    slide_level: 1
+    reveal_options:
+      slideNumber: false
+      controls: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## The IPT at OBIS
+
+- 36 IPTs in the network
+- 15 IPTs managed by EurOBIS
+- all data flows through IPT with just a few exceptions (standalone Darwin Core Archives)
+- various modes of operation: file based, database connections, data directory generation
+
+---
+
+## Data model
+
+- detailed and machine readable sampling methodology, quantitative data, and environmental parameters are a primary focus for OBIS <br/>&rarr; facilitate analyses across datasets, including calculation of Essential Ocean Variables (EOV) data products
+- ExtendedMeasurementsOrFacts extension: pragmatic solution to the star schema limitation, but not very intuitive
+- Frictionless Data packages
+
+<img src="images/envdata.png" style="width: 40%;"/>
+
+---
+
+## Streaming data
+
+- increasing data volume and velocity from autonomous monitoring platforms and citizen science
+- incremental / delta updates, `git` for data?
+
+<div class="imagerow">
+<div class="imagecell">
+<img src="images/zooglider.png"/>
+<br/><span class="caption">Image: Julie Barrios</span>
+</div>
+<div class="imagecell">
+<img src="images/eol.jpg"/>
+</div>
+<div class="imagecell">
+<img src="images/ferrybox.jpg" />
+<br/><span class="caption">Image: HIMIOFoTs</span>
+</div>
+
+---
+
+## Data validation
+
+- data providers and nodes use R packages (`obistools` and others) and online services (LifeWatch, EMODnet) for quality control
+- OBIS performs quality control on data ingestion, data quality issues are displayed on our dataset pages but are often not acted upon
+- data validation at the IPT level would be very helpful
+  - `whip` specifications
+  - Frictionless Data Table Schema
+  - Frictionless Data `validate` module supports custom checks in addition to predefined checks
+
+---
+
+## IPT and resource registration
+
+- registration of IPTs and datasets in OBIS is a manual process
+- how to solve?
+  - support multiple registry endpoints?
+  - connect installations and resources to networks in the GBIF registry from the IPT
+
+
+---
+
+## Usability issues
+
+- step by step (wizard) interface for novice users
+- wider EML support for expert users, e.g. more detailed geographic coverage with multiple polygons
+- manage people and keyword sets at the IPT level
+- import contact details from ORCID
+
+---
+
+## Software architecture
+
+- see GeoNode's modular design using Django apps
+
+---
+
+`r emo::ji("whale")`
