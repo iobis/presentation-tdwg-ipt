@@ -29,7 +29,7 @@ editor_options:
 ## The IPT at OBIS
 
 - 36 IPTs in the network
-- 15 IPTs managed by EurOBIS
+- 15 IPTs managed by VLIZ
 - all data flows through IPT with just a few exceptions (standalone Darwin Core Archives)
 - various modes of operation: file based, database connections, data directory generation
 
@@ -37,7 +37,7 @@ editor_options:
 
 ## Data model
 
-- detailed and machine readable sampling methodology, quantitative data, and environmental parameters are a primary focus for OBIS <br/>&rarr; facilitate analyses across datasets, including calculation of Essential Ocean Variables (EOV) data products
+- detailed and machine readable sampling methodology, quantitative data, and environmental parameters are a primary focus for OBIS <br/>&rarr; facilitate analyses across datasets, including calculation of [Essential Ocean Variables](https://www.goosocean.org/index.php?option=com_content&view=article&id=170&Itemid=101) (EOV) data products
 - ExtendedMeasurementsOrFacts extension: pragmatic solution to the star schema limitation, but not very intuitive
 - Frictionless Tabular Data Packages
 
@@ -68,8 +68,8 @@ editor_options:
 ## Data validation
 
 - data providers and nodes use R packages (`obistools` and others) and online services (LifeWatch, EMODnet) for quality control
-- OBIS performs quality control on data ingestion, data quality issues are displayed on our dataset pages but are often not acted upon
-- data validation at the IPT level would be very helpful
+- OBIS performs quality control on data ingestion, data quality issues are displayed on our dataset pages but are not always acted upon
+- configurable data validation at the IPT level would be very helpful
   - `whip` specifications
   - Frictionless Data Table Schema
   - Frictionless Data `validate` module supports custom checks in addition to predefined checks
